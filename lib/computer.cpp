@@ -1,6 +1,8 @@
 #include <iostream>
 #include "computer.h"
 
+Computer::Computer() : name("타이젠"), id(0), price(50000) {};
+
 Computer::Computer(const string &name, const int &id, const int &price)
 {
     this->name = name;

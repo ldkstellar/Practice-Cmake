@@ -5,13 +5,15 @@ using namespace std;
 
 class Computer
 {
-private:
-    string name;
-    int price;
-    int id;
-    /* data */
 public:
+    Computer();
     Computer(const string &name, const int &id, const int &price);
     ~Computer();
     void print();
+
+private:
+    string name;
+    int id;
+    int price;
+    /* data */
 };
