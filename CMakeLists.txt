@@ -9,7 +9,7 @@ add_compile_options(-Wall -Wextra)
 add_executable(myComputer src/main.cpp)
 
 # 라이브러리 추가
-add_library(computer STATIC lib/computer.h lib/computer.cpp)
+add_library(computer STATIC lib/computer.hpp lib/computer.cpp)
 target_include_directories(computer PUBLIC lib)
 
 # 타겟을 라이브러리와 링크

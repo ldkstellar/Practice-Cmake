@@ -1,5 +1,5 @@
 #include <iostream>
-#include "computer.h"
+#include "computer.hpp"
 
 Computer::Computer() : name("타이젠"), id(0), price(50000) {};
 

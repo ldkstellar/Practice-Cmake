@@ -1,8 +1,6 @@
-#pragma once
-#include <iostream>
-#include "computer.h"
-using namespace std;
+#pragma once // 인클루드 중복 방지
 
+using namespace std;
 class Computer
 {
 public:

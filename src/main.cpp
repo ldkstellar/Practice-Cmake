@@ -1,5 +1,5 @@
 #include <iostream>
-#include "computer.h"
+#include "computer.hpp"
 using namespace std;
 
 int main(int argc, char const *argv[])
