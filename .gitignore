@@ -1,11 +1,11 @@
 # Build directories
 /build/
 /bin/
-
+/install/
 /out/
 /obj/
 /CMakeFiles/
-/build-ninja/
+/ninja-build/
 
 # CMake-generated files
 CMakeCache.txt
@@ -69,3 +69,6 @@ desktop.ini
 /Testing/
 LastTest.log
 Temporary/
+
+# excutefile
+myComputer.out
