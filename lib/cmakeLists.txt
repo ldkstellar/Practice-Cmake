@@ -1,0 +1,6 @@
+# 라이브러리 타겟을 정의
+add_library(computer STATIC include/computer.hpp src/computer.cpp)
+
+# 타겟을 컴파일 할 때 사용할 인클루드 디렉토릴를 지정
+target_include_directories(computer
+    PUBLIC include)

@@ -22,7 +22,10 @@ set(CMAKE_CXX_STANDARD 11)
 # 컴파일러 오류 옵션
 add_compile_options(-Wall -Wextra)
 
-# 실행 target 추가
+# sub 디렉토리 추가
+add_subdirectory(lib)
+
+# 실행 target추가
 add_executable(myComputer src/main.cpp)
 target_include_directories(myComputer PRIVATE src)
 set_target_properties(myComputer PROPERTIES SUFFIX ".out")
@@ -31,10 +34,11 @@ set_target_properties(myComputer PROPERTIES SUFFIX ".out")
 set(BUILD_SHARED_LIBS FALSE)
 
 # 라이브러리 추가
-add_library(computer STATIC lib/computer.hpp lib/computer.cpp)
-target_include_directories(computer PUBLIC lib)
+# add_library(computer STATIC lib/computer.hpp lib/computer.cpp)
+# target_include_directories(computer PRIVATE lib)
 
 # 타겟을 라이브러리와 링크
 target_link_libraries(myComputer PRIVATE computer)
 
+# 타겟을 설치하는 위치 지정하는 방법
 install(TARGETS myComputer DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
